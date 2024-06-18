@@ -91487,3 +91487,650 @@
 [debug]: ServerTime: 23
 [debug]: Rooms:
 [debug]: Requests:
+[info]: Server is running on port 42133
+[info]: Client connected
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[301] wants to turn AC on
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[301] wants to turn AC off
+[info]: Cannot set properties of undefined (setting 'AC_status')
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[info]: Client send a message.
+[info]: Room[301] wants to turn AC on
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[301] wants to turn AC off
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 36
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 37
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 38
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 39
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 40
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 41
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 42
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 43
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 44
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 45
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 46
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 47
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 48
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 49
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 50
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 51
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 52
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 53
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 54
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 55
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 56
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 57
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 58
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 59
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 60
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 61
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 62
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 63
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 64
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 65
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 66
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 67
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 68
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 69
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: User in Room[1] loged in
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 70
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 71
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 72
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[1] wants to turn AC on
+[debug]: ServerTime: 73
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 74
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[1] wants to turn AC off
+[debug]: ServerTime: 75
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 76
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[1] wants to turn AC on
+[debug]: ServerTime: 77
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 78
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[1] wants to turn AC off
+[debug]: ServerTime: 79
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 80
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[1] wants to turn AC on
+[debug]: ServerTime: 81
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 82
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 83
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 84
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 85
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 86
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 87
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 88
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 89
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 90
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 91
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 92
+[debug]: Rooms:
+[debug]: Room[1](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[info]: Client connected
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: User in Room[2] loged in
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[2] wants to turn AC on
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 36
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 37
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 38
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[2] wants to turn AC off
+[debug]: ServerTime: 39
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 40
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 41
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 42
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[2] wants to turn AC on
+[debug]: ServerTime: 43
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 44
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 45
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 46
+[debug]: Rooms:
+[debug]: Room[2](on): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room[2] wants to turn AC off
+[debug]: ServerTime: 47
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 48
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 49
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 50
+[debug]: Rooms:
+[debug]: Room[2](off): 25 now.
+[debug]: Requests:

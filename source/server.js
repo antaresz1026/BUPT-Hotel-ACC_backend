@@ -387,8 +387,8 @@ class Clients {
         }
     }
 
-    sendResponse(ws, callback, message) {
-        ws.send(JSON.stringify({ type: 'RESPONSE', callback: `${callback}`, message: `${message}`}));
+    sendResponse(ws, callback, replyto, message) {
+        ws.send(JSON.stringify({ type: 'RESPONSE', callback: `${callback}`, func: `${replyto}`, message: `${message}`}));
     }
 }
 
@@ -467,9 +467,8 @@ wss.on('connection', (ws) => {
             if (data.type === 'LOGIN') {
                 if (data.role === 'user') {
                     let ifexist = await sql_manager.query('SELECT * FROM USERS WHERE roomid = ?', [data.form.room]);
-                    console.log(ifexist.length);
                     if (ifexist.length > 0) {
-                        const m_err = new Error(`Room${data.form.room} already exists.`)
+                        const m_err = new Error(`${data.form.room} already exists.`)
                         throw m_err; //throw out to send to client error
                     } else {
                         sql_manager.query('INSERT INTO USERS (name, roomid) VALUES (?, ?)', [data.form.name, data.form.room]);
@@ -482,15 +481,16 @@ wss.on('connection', (ws) => {
                     logger.info("One admin loged in");
                 }
                 clients_manager.addClient(ws, data.role);
+                clients_manager.sendResponse(ws, 'true', 'login');
             } else if (data.type === 'AC_ON') {
-                const now_status = rooms_manager.getRoomStatus(data.roomid);
-
-                if (now_status === 'off') {
-                    rooms_manager.updateRoom('AC_status', data.roomid, 'on');
-                }
-                clients_manager.sendResponse(ws, 'AC_ON_RESPONSE');
+                logger.info(`Room[${data.roomid}] wants to turn AC on`)
+                rooms_manager.updateRoom('AC_status', data.roomid, 'on');
+                clients_manager.sendResponse(ws, 'true', 'AC_on');
             } else if (data.type === 'AC_OFF') {
+                logger.info(`Room[${data.roomid}] wants to turn AC off`)
+                
                 rooms_manager.updateRoom('AC_status', data.roomid, 'off');
+                clients_manager.sendResponse(ws, 'true', 'AC_off');
             } else if (data.type === 'REQUEST') {
                 const room_status_now = this.rooms.getRoomStatus('AC_status', data.room);
 
@@ -501,9 +501,9 @@ wss.on('connection', (ws) => {
                     wx.send(JSON.stringify({ type: 'response', data: 'AC is off.Please turn on AC and try again'}))
                 }
             }
-            clients_manager.sendResponse(ws, 'true');
+            
         } catch (err) {
-            logger.info(err);
+            logger.error(err);
             clients_manager.sendResponse(ws, 'false', err);
         }
     });

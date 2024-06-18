@@ -22,3 +22,4 @@
 [error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
 [error]: SQL query fail: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEARCH FROM USERS WHERE roomid = ?' at line 1
 [error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[error]: Cannot set properties of undefined (setting 'AC_status')
