@@ -12,3 +12,13 @@
 [error]: request is not defined
 [error]: request is not defined
 [error]: CM is not defined
+[error]: roomState is not defined
+[error]: roomState is not defined
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: room_manager is not defined
+[error]: SQL query fail.
+[error]: SQL query fail: Error: Table 'HACC.USERS' doesn't exist
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[error]: SQL query fail: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEARCH FROM USERS WHERE roomid = ?' at line 1
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'

@@ -88268,3 +88268,3222 @@
 [debug]: [Room303](15) -> (15.5)
 [info]: Serving Room301(current: 18.5)
 [info]: Serving Room301(changed: 18)
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[undefined] loged in
+[error]: roomState is not defined
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: roomState is not defined
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: room_manager is not defined
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: SQL query fail.
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: SQL query fail: Error: Table 'HACC.USERS' doesn't exist
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[info]: WebSocket server is running on wss://www.antaresz.cc:42133
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 36
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 37
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 38
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 39
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 40
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 41
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 42
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 43
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 44
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 45
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 36
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 37
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 38
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 39
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 40
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 41
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 42
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 43
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 44
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 45
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 46
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 47
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 48
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 49
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 50
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 51
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 52
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 53
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 54
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 55
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 56
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 57
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 58
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 59
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 60
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 61
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 62
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 63
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 64
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 65
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 66
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 67
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 68
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 69
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 70
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 71
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 72
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 73
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 74
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 75
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 76
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 77
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 78
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 79
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 80
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 81
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 82
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 83
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 84
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 85
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 86
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 87
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 88
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 89
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 90
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 91
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 92
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 93
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 94
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 95
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 96
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 97
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 98
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 99
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 100
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 101
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 102
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 103
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 104
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 105
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 106
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 107
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 108
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 109
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 110
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 111
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 112
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 113
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 114
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 115
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 116
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 117
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 118
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 119
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 120
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 121
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 122
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 123
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 124
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 125
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 126
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 127
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 128
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 129
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 130
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 131
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 132
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 133
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 134
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 135
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 136
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 137
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 138
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 139
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 140
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 141
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 142
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 143
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 144
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 145
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 146
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 147
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 148
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 149
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 150
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 151
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 152
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 153
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 154
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 155
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 156
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 157
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 158
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 159
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 160
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 161
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 162
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 163
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 164
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 165
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 166
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 167
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 168
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 169
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 170
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 171
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 172
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 173
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 174
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 175
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 176
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 177
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 178
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 179
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 180
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 181
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 182
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 183
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 184
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 185
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 186
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 187
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 188
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 189
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 190
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 191
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 192
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 193
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 194
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 195
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 196
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 197
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 198
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 199
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 200
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 201
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 202
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 203
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 204
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 205
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 206
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 207
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 208
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 209
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 210
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 211
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 212
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 213
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 214
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 215
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 216
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 217
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 218
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 219
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 220
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 221
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 222
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 223
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 224
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 225
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 226
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 227
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: sql is not defined
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[error]: SQL query fail: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEARCH FROM USERS WHERE roomid = ?' at line 1
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: User in Room[301] loged in
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room302 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: undefined
+[info]: Room302 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: undefined
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: ${ifexist.length}
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[info]: Client connected
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: undefined
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: undefined
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: undefined
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: 1
+[info]: Room301 already exists.
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[info]: Client connected
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: Room301 already exists.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: User in Room[301] loged in
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Room[301](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 24
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 25
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 26
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 27
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 28
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 29
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 30
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 31
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 32
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 33
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 34
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 35
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: User in Room[302] loged in
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Room[302](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[info]: SQL query execute successfully.
+[info]: User in Room[303] loged in
+[info]: SQL query execute successfully.
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Room[303](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Room[303](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Room[303](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Room[303](off): 25 now.
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Room[303](off): 25 now.
+[debug]: Requests:
+[info]: Server is running on port 42133
+[debug]: ServerTime: 0
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 1
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client connected
+[debug]: ServerTime: 2
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 3
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 4
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 5
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 6
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 7
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 8
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 9
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 10
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 11
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 12
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 13
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 14
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 15
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 16
+[debug]: Rooms:
+[debug]: Requests:
+[info]: Client send a message.
+[debug]: ServerTime: 17
+[debug]: Rooms:
+[debug]: Requests:
+[info]: SQL query execute successfully.
+[info]: Room303 already exists.
+[debug]: ServerTime: 18
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 19
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 20
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 21
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 22
+[debug]: Rooms:
+[debug]: Requests:
+[debug]: ServerTime: 23
+[debug]: Rooms:
+[debug]: Requests:

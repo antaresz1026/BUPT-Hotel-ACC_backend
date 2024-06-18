@@ -8,17 +8,8 @@ const PriorityQueue = require('js-priority-queue');
 const EventEmitter = require('events');
 
 class MyEmitter extends EventEmitter {}
-class roomManager {
-    constructor() {
-        this.rooms = new Map();
-    }
 
-    addRoom(roomid, roomState) {
-        this.rooms.set(roomid, roomState);
-    }
-}
-
-class roomState {
+class Room {
     constructor(AC_status, temperature, enviroment) {
         this.AC_status = AC_status;
         this.temperature = temperature;
@@ -26,95 +17,107 @@ class roomState {
     }
 }
 
-class clientsManager {
-    constructor(rooms, RM) {
-        this.rooms = rooms;
-        this.RM = RM;
-        this.clients = new Set();
-        this.admins = new Set();
-        this.tickAway();
-    }
-
-    broadCast(target, message) { 
-        target.forEach(client => {
-            if (client.readyState === WebSocket.OPEN) {
-                client.send(message);
-            }
-        })
-    }
-
-    tickAway() {
-        setInterval(() => {
-            
-            simulatedTime += 1;
-            //当前时间
-            logger.debug(`ServerTime: ${simulatedTime}`);
-
-            //房间状态
-            logger.debug("Rooms:");
-            this.rooms.forEach((data, roomid) => {
-                logger.debug(`[Room${roomid}](${data.AC_status}): ${data.temperature}`);
-                this.broadCast(this.admins, JSON.stringify({ type: 'RoomsTable', room: `${roomid}`, temperature: `${data.temperature}`, AC_status: `${data.AC_status}`}));
-            });
-
-            //请求状态
-            logger.debug("Requests:");
-            this.RM.requests.forEach(request => {
-                logger.debug(`From [Room${request.room}(${this.rooms.get(request.room).AC_status})](temperature: ${request.current_temperature} wind: ${request.priority} serviceTime: ${request.serviceTime}): ${request.target_temperature}-----waiting ${request.waitingTime}------timeslice ${request.timeslice} ${request.timeslice_time}`);
-            });
-
-            //正在服务请求
-            logger.debug(`ActiveQueue: ${this.RM.active_queue.length}`);
-
-            //等待服务请求
-            logger.debug(`WaitingQueue: ${this.RM.waiting_queue.length}`);
-
-            this.RM.requests.forEach(request => {
-                request.socketid.send(JSON.stringify({type: 'TemperatureUpdate', data: request.current_temperature}));
-            });
-            this.broadCast(this.clients, JSON.stringify({ type: 'MinutePassed', time: simulatedTime}));
-            myEmitter.emit('MinutePassed', simulatedTime);
-        }, 1000);
-    }
-
-    addClient(ws, role) {
-        if (role === 'admin') {
-            this.admins.add(ws);
-        } else if (role === 'user') {
-            this.clients.add(ws);
-        }
-    }
-
-    removeClient(ws) {
-        if (role === 'admin') {
-            this.admins.delete(ws);
-        } else if (role === 'user') {
-            this.clients.delete(ws);
-        }
-    }
-}
-
-
-
-class request {
-    constructor(socketid, room, current_temperature, target_temperature, priority) {
+class Request {
+    constructor(socketid, roomid, current_temperature, target_temperature, priority) {
       this.socketid = socketid;
-      this.room = room;
+      this.roomid = roomid;
       this.current_temperature = current_temperature;
       this.target_temperature = target_temperature;
       this.priority = priority;
-      this.serviceTime = 0;
-      this.waitingTime = 0;
-      this.timeslice = false;
-      this.timeslice_time = 0;
     }
 }
-  
-class requestManager {
+
+class Rooms {
+    constructor() {
+        this.rooms = new Map();
+    }
+
+    addRoom(roomid, roomState) {
+        this.rooms.set(roomid, roomState);
+    }
+
+
+    
+    /**
+     * update status of room, only AC_status and temperature, because enviroment can't be reset.
+     * @author antaresz
+     *
+     * @param {*} whichstatus
+     * @param {*} roomid
+     * @param {*} value
+     */
+    updateRoom(whichstatus, roomid, value) {
+        
+        if(whichstatus === 'AC_status') {
+            this.rooms.get(roomid).AC_status = value;
+        } else if (whichstatus === 'temperature') {
+            this.rooms.get(roomid).temperature = value;
+        } 
+        
+    }
+
+    
+    /**
+     * return a room's status
+     * @author antaresz
+     *
+     * @param {*} whichstatus
+     * @param {*} roomid
+     * @returns {*}
+     */
+    getRoomStatus(whichstatus, roomid) {
+        let result;
+
+        if(whichstatus === 'AC_status') {
+            result = this.rooms.get(roomid).AC_status;
+        } else if (whichstatus === 'temperature') {
+            result = this.rooms.get(roomid).temperature;
+        } 
+
+        return result;
+    }
+
+    allRoomsStatus() {
+        let result = {};
+
+        this.rooms.forEach((value, key) => {
+            result[key] = value;
+        })
+
+        return result;
+    }
+
+}
+
+
+
+class Service {
     constructor(rooms, mode, maxServingRequests) {
         this.rooms = rooms;
         this.mode = mode;
         this.maxServingRequests = maxServingRequests;
+    }
+
+    Serve(request) {
+        const __temperature = request.current_temperature;
+        
+        if (request.mode === 'cold') {
+            request.current_temperature -= 0.5;
+        } else {
+            request.current_temperature += 0.5;
+        }
+
+        request.serviceTime += 1;
+        this.rooms.updateRoom('temperature', request.roomid, request.current_temperature);
+        logger.info(`Serving Room${request.room}(${__temperature} -> ${request.current_temperature})`);
+    }
+}
+
+  
+class Scheduler {
+    constructor(rooms) {
+        this.rooms = rooms;
+        
         this.requests = new Set();
 
         //优先退出active_request,进入
@@ -126,7 +129,6 @@ class requestManager {
                 return a.priority - b.priority;
             }
         })
-        this.active_queue_template = new Set();
 
         //优先进入active_request
         this.waiting_queue = new PriorityQueue({
@@ -137,7 +139,7 @@ class requestManager {
                 return b.priority - a.priority;
             }
         });
-        this.waiting_queue_template = new Set();
+
         this.TIME_SLICE = 2;
         this.WAITING_LONG = 3;
     }
@@ -263,7 +265,7 @@ class requestManager {
                 } else if (this.mode === 'cold' && this.rooms.get(request.room).enviroment - this.rooms.get(request.room).temperature > 0.001) {
                     this.rooms.get(request.room).temperature += 0.5;
                 }
-                logger.debug(`[Room${request.room}](${request.current_temperature}) -> (${this.rooms.get(request.room).temperature})`);
+                logger.debug(`Room[${request.room}](${request.current_temperature}) -> (${this.rooms.get(request.room).temperature})`);
                 request.current_temperature = this.rooms.get(request.room).temperature;
                 //rest后重新调度
                 if (Math.abs(request.current_temperature - request.target_temperature) > 3) {
@@ -296,22 +298,7 @@ class requestManager {
         }
     }
 
-    processRequest(serving_request) {
-        logger.info(`Serving Room${serving_request.room}(current: ${serving_request.current_temperature})`);
-        
-        if (this.mode === 'cold') {
-            serving_request.current_temperature -= 0.5;
-        } else {
-            serving_request.current_temperature += 0.5;
-        }
-        
-        logger.info(`Serving Room${serving_request.room}(changed: ${serving_request.current_temperature})`);
-        this.rooms.get(serving_request.room).temperature = serving_request.current_temperature;
-        serving_request.serviceTime += 1;
-
-    }
-
-    newRequest(new_request) {
+    addRequest(new_request) {
         let existing_request = null;
 
         this.requests.forEach(request => {
@@ -324,14 +311,118 @@ class requestManager {
             existing_request.target_temperature = new_request.target_temperature;
             existing_request.current_temperature = new_request.current_temperature;
             existing_request.priority = new_request.priority;
-            logger.debug(`[RequestUpdate] update ${existing_request.room}`);
+            logger.debug(`Request[${new_request.roomid}] already exists. data update now.`);
         } else {
             this.requests.add(new_request);
+            this.rooms.updateRoom('AC_status', new_request.roomid, 'waiting');
         }
     }
 }
 
-const myEmitter = new MyEmitter();
+
+class Clients {
+    constructor(rooms, scheduler) {
+        this.rooms = rooms;
+        this.scheduler = scheduler;
+        this.clients = new Set();
+        this.admins = new Set();
+        this.tickAway();
+    }
+
+    broadCast(target, message) { 
+        target.forEach(client => {
+            if (client.readyState === WebSocket.OPEN) {
+                client.send(message);
+            }
+        })
+    }
+
+    tickAway() {
+        setInterval(() => {
+            let allroomstatus = this.rooms.allRoomsStatus();
+            //当前时间
+            logger.debug(`ServerTime: ${simulatedTime}`);
+
+            //房间状态
+            logger.debug("Rooms:");
+            for (const key in allroomstatus) {
+                const value = allroomstatus[key];
+                logger.debug(`Room[${key}](${value.AC_status}): ${value.temperature} now.`)
+            }
+
+            //请求状态
+            logger.debug("Requests:");
+            this.scheduler.requests.forEach(request => {
+                logger.debug(`Room[${request.room}](${this.rooms.getRoomStatus(request.room).AC_status})----------------(temperature: ${request.current_temperature} wind: ${request.priority} serviceTime: ${request.serviceTime}): ${request.target_temperature}-----waiting ${request.waitingTime}------timeslice ${request.timeslice} ${request.timeslice_time}`);
+            });
+
+            //正在服务请求
+            // logger.debug(`ActiveQueue: ${this.RM.active_queue.length}`);
+
+            //等待服务请求
+            // logger.debug(`WaitingQueue: ${this.RM.waiting_queue.length}`);
+
+            this.scheduler.requests.forEach(request => {
+                request.socketid.send(JSON.stringify({type: 'TEMPERATUREUPDATE', data: request.current_temperature}));
+            });
+            simulatedTime += 1;
+            this.broadCast(this.clients, JSON.stringify({ type: 'MINUTEPASSED', time: simulatedTime}));
+            this.broadCast(this.admins, JSON.stringify({ type: 'ROOMSTABLE', data: ``}));
+        }, 1000);
+    }
+
+    addClient(ws, role) {
+        if (role === 'admin') {
+            this.admins.add(ws);
+        } else if (role === 'user') {
+            this.clients.add(ws);
+        }
+    }
+
+    removeClient(ws) {
+        if (role === 'admin') {
+            this.admins.delete(ws);
+        } else if (role === 'user') {
+            this.clients.delete(ws);
+        }
+    }
+
+    sendResponse(ws, callback, message) {
+        ws.send(JSON.stringify({ type: 'RESPONSE', callback: `${callback}`, message: `${message}`}));
+    }
+}
+
+class Database {
+    constructor() {
+        this.pool = mysql.createPool({
+            connectionLimit: 10, 
+            host: 'localhost',
+            user: 'antaresz',
+            database: 'HACC',
+            password: 'antaresz.cc',
+            waitForConnections: true
+        });
+    }
+
+    async query(sql, params) {
+        let connection;
+
+        try {
+            connection = await this.pool.getConnection();
+            const [rows, fields] = await connection.execute(sql, params);
+
+            logger.info("SQL query execute successfully.");
+            return rows;
+        } catch (err) {
+            logger.error(`SQL query fail: ${err}`);
+        } finally {
+            if (connection) {
+                connection.release();
+            }
+        }
+    }
+
+}
 
 const logger = winston.createLogger({
 	level: 'debug',
@@ -345,13 +436,7 @@ const logger = winston.createLogger({
 	],
 });
 
-const pool = mysql.createPool({
-    connectionLimit: 10, 
-    host: 'localhost',
-    user: 'antaresz',
-    database: 'HACC',
-    password: 'antaresz.cc'
-});
+
 
 const port = 42133;
 const app = express();
@@ -366,45 +451,60 @@ const wss = new WebSocket.Server({ server });
 
 let mode = 'cold';
 let simulatedTime = 0;
-const rooms = new roomManager();
-const RM = new requestManager(rooms.rooms, mode, 2);
-const CM = new clientsManager(rooms.rooms, RM);
-
+const rooms_manager = new Rooms();
+const scheduler = new Scheduler(rooms_manager);
+const clients_manager = new Clients(rooms_manager, scheduler);
+const sql_manager = new Database();
 
 wss.on('connection', (ws) => {
-    logger.info(`WebSocket server is running on wss://www.antaresz.cc:${port}`);
-    ws.on('message', (msg) => {
+    logger.info('Client connected');
+    ws.on('message', async (msg) => {
+        logger.info("Client send a message.");
+
         try {
             const data = JSON.parse(msg);
 
-            if (data.type === 'login') {
+            if (data.type === 'LOGIN') {
                 if (data.role === 'user') {
-                    logger.info(`User in Room[${data.room}] loged in`);
-                    const room = new roomState(data.AC_status, data.temperature, data.enviroment);
-                    
-                    rooms.addRoom(data.room, room);
+                    let ifexist = await sql_manager.query('SELECT * FROM USERS WHERE roomid = ?', [data.form.room]);
+                    console.log(ifexist.length);
+                    if (ifexist.length > 0) {
+                        const m_err = new Error(`Room${data.form.room} already exists.`)
+                        throw m_err; //throw out to send to client error
+                    } else {
+                        sql_manager.query('INSERT INTO USERS (name, roomid) VALUES (?, ?)', [data.form.name, data.form.room]);
+                        logger.info(`User in Room[${data.form.room}] loged in`);
+                        const room = new Room(data.room_status.AC_status, data.room_status.temperature, data.room_status.enviroment);
+                        
+                        rooms_manager.addRoom(data.form.room, room);
+                    }
                 } else if (data.role === 'admin') {
-                    logger.info("one admin loged in");
+                    logger.info("One admin loged in");
                 }
-                CM.addClient(ws, data.role);
-                ws.send(JSON.stringify({ type: 'response', data: 'successfully login'}));
-            } else if (data.type === 'ACON') {
-                const query_room_state = rooms.rooms.get(data.room);
-                if (query_room_state.AC_status === 'off') {
-                    rooms.rooms.get(data.room).AC_status = 'on';
+                clients_manager.addClient(ws, data.role);
+            } else if (data.type === 'AC_ON') {
+                const now_status = rooms_manager.getRoomStatus(data.roomid);
+
+                if (now_status === 'off') {
+                    rooms_manager.updateRoom('AC_status', data.roomid, 'on');
                 }
-            } else if (data.type === 'ACOFF') {
-                rooms.rooms.get(data.room).AC_status = 'off';
-            } else if (data.type === 'request') {
-                const new_request = new request(ws, data.room, data.current_temperature, data.target_temperature, data.wind);
-                RM.newRequest(new_request); 
+                clients_manager.sendResponse(ws, 'AC_ON_RESPONSE');
+            } else if (data.type === 'AC_OFF') {
+                rooms_manager.updateRoom('AC_status', data.roomid, 'off');
+            } else if (data.type === 'REQUEST') {
+                const room_status_now = this.rooms.getRoomStatus('AC_status', data.room);
+
+                if (room_status_now !== 'off') {
+                    const new_request = new request(ws, data.room, data.current_temperature, data.target_temperature, data.wind);
+                    scheduler.addRequest(new_request); 
+                } else {
+                    wx.send(JSON.stringify({ type: 'response', data: 'AC is off.Please turn on AC and try again'}))
+                }
             }
+            clients_manager.sendResponse(ws, 'true');
         } catch (err) {
-            logger.error(err);
+            logger.info(err);
+            clients_manager.sendResponse(ws, 'false', err);
         }
     });
-})
-
-myEmitter.on('MinutePassed', () => {
-    RM.running();
 })
