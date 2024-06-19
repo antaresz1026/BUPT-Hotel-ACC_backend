@@ -24,19 +24,20 @@ class Request {
       this.current_temperature = current_temperature;
       this.target_temperature = target_temperature;
       this.priority = priority;
+      this.serviceTime = 0;
+      this.waitingTime = 0;
     }
 }
 
 class Rooms {
     constructor() {
         this.rooms = new Map();
+        this.room_table = new Set();
     }
 
     addRoom(roomid, roomState) {
         this.rooms.set(roomid, roomState);
     }
-
-
     
     /**
      * update status of room, only AC_status and temperature, because enviroment can't be reset.
@@ -47,13 +48,14 @@ class Rooms {
      * @param {*} value
      */
     updateRoom(whichstatus, roomid, value) {
-        
-        if(whichstatus === 'AC_status') {
+        if(!this.rooms.has(roomid)) {
+            const m_err = new Error('Target Room isn\'t existed.');
+            throw m_err;
+        } else if(whichstatus === 'AC_status') {
             this.rooms.get(roomid).AC_status = value;
         } else if (whichstatus === 'temperature') {
             this.rooms.get(roomid).temperature = value;
         } 
-        
     }
 
     
@@ -67,7 +69,6 @@ class Rooms {
      */
     getRoomStatus(whichstatus, roomid) {
         let result;
-
         if(whichstatus === 'AC_status') {
             result = this.rooms.get(roomid).AC_status;
         } else if (whichstatus === 'temperature') {
@@ -99,210 +100,87 @@ class Service {
     }
 
     Serve(request) {
+        //just for console
         const __temperature = request.current_temperature;
         
-        if (request.mode === 'cold') {
+        if (mode === 'cold') {
             request.current_temperature -= 0.5;
         } else {
             request.current_temperature += 0.5;
         }
 
         request.serviceTime += 1;
+        request.waitingTime = 0;
         this.rooms.updateRoom('temperature', request.roomid, request.current_temperature);
-        logger.info(`Serving Room${request.room}(${__temperature} -> ${request.current_temperature})`);
+        logger.info(`Serving Room${request.roomid}(${__temperature} -> ${request.current_temperature})`);
     }
 }
 
   
 class Scheduler {
-    constructor(rooms) {
+    constructor(rooms, service) {
         this.rooms = rooms;
-        
+        this.resource = service
         this.requests = new Set();
-
-        //优先退出active_request,进入
-        this.active_queue = new PriorityQueue({
-            comparator: (a, b) => {
-                if (b.priority === a.priority) {
-                    return b.serviceTime - a.serviceTime; // 同优先级下，服务时间短的优先
-                }
-                return a.priority - b.priority;
-            }
-        })
-
-        //优先进入active_request
         this.waiting_queue = new PriorityQueue({
             comparator: (a, b) => {
                 if (b.priority === a.priority) {
-                    return b.waitingTime - a.waitingTime; // 同优先级下，服务时间短的优先
+                    if (b.waitingTime === this.WAITING_LONG && a.waitingTime !== this.WAITING_LONG) {
+                        return 1;
+                    } else if (a.waitingTime === this.WAITING_LONG && b.waitingTime !== this.WAITING_LONG) {
+                        return -1;
+                    } else if (b.waitingTime === a.waitingTime) {
+                        return a.serviceTime - b.serviceTime;
+                    } else {
+                        return b.waitingTime - a.waitingTime;
+                    }
                 }
                 return b.priority - a.priority;
             }
         });
-
-        this.TIME_SLICE = 2;
-        this.WAITING_LONG = 3;
+        
+        this.resting_queue = new Set();
+        this.WAITING_LONG = 2;
     }
 
     running() {
-        //处理响应
-        while(this.active_queue.length > 0) {
-            let serve_request =  this.active_queue.dequeue();
-            this.processRequest(serve_request);
-
-            if (Math.abs(serve_request.current_temperature - serve_request.target_temperature) < 0.1) {
-                this.waiting_queue_template.delete(serve_request);
-                this.rooms.get(serve_request.room).AC_status = 'rest';
-
-                //serve_request已经出队列
-            } else {
-                let ifexist = false;
-                this.active_queue_template.forEach((a_e_request) => {
-                    if (a_e_request.room === serve_request.room) {
-                        a_e_request.target_temperature = serve_request.target_temperature;
-                        a_e_request.current_temperature = serve_request.current_temperature;
-                        a_e_request.priority = serve_request.priority;
-                        a_e_request.serviceTime = serve_request.serviceTime;
-                        ifexist = true;
-                    }
-                });
-        
-                if (!ifexist) {
-                    this.active_queue_template.add(serve_request);
-                }
-            }
+        const template = new Set();
+        const ready_queue = new Set();
+        //when ready_queue.size == 0 it entry
+        logger.debug("Requests:");
+        this.requests.forEach(request => {
+            logger.debug(`Room[${request.roomid}](${this.rooms.getRoomStatus('AC_status', request.roomid)}): ${request.target_temperature}----------------(temperature: ${request.current_temperature} wind: ${request.priority} serviceTime: ${request.serviceTime} waitingTime: ${request.waitingTime}) `);
+        }); 
+        logger.debug("Queue:");
+        this.printQueue("Waiting: ");
+        while(ready_queue.size < this.resource.maxServingRequests && this.waiting_queue.length > 0) {
+            let ready_request =  this.waiting_queue.dequeue();
+            ready_queue.add(ready_request);
+            template.add(ready_request);
+            this.rooms.updateRoom('AC_status', ready_request.roomid, 'working')
         }
-        this.active_queue_template.forEach((a_e_request) => {
-            logger.info(`${a_e_request.room} is in active template`)
-            this.active_queue.queue(a_e_request);
-        });
-        
-        //处理等待
         while(this.waiting_queue.length > 0) {
-            let wait_request =  this.waiting_queue.dequeue();
-            let ifexist = false;
-            
-            if(wait_request != 0) {
-                wait_request.waitingTime -= 1;
+            let restof_request = this.waiting_queue.dequeue();
+            if(restof_request.waitingTime !== 2) {
+                restof_request.waitingTime += 1;
             }
-
-            if (wait_request.timeslice != 0) {
-                wait_request.timeslice_time -= 1;
-            }
-            if (wait_request.timeslice === true && wait_request.timeslice_time === 0) {
-                //如果是时间片轮转
-                let release_request = this.active_queue.dequeue();
-
-                //原来的wait_request 要进入active
-                
-                wait_request.timeslice = false;
-                wait_request.timeslice_time = 0;
-                wait_request.waitingTime = 0;
-                this.waiting_queue_template.delete(wait_request);
-                this.rooms.get(wait_request.room).AC_status = 'working';
-                this.active_queue.queue(wait_request);
-
-                //现在的release_request要进入waiting
-                release_request.waitingTime = 3;
-                this.rooms.get(release_request.room).AC_status = 'waiting';
-                this.waiting_queue.queue(release_request);
-                this.active_queue_template.delete(release_request);
-            }
-            //到达等待服务时长
-            if (wait_request.waitingTime === 0 && !wait_request.timeslice) {
-
-                //非时间片轮转，寻常调度
-                this.active_queue.queue(wait_request);
-                let release_request = this.active_queue.dequeue();
-
-                if (wait_request.room == release_request.room) {
-                    wait_request.waitingTime = this.WAITING_LONG;
-
-                } else {
-                    if (wait_request.priority === release_request.priority) {   
-                        release_request.timeslice = true;
-                        release_request.timeslice_time = this.TIME_SLICE;
-                        release_request.waitingTime = this.WAITING_LONG;
-
-                    }
-                    wait_request.waitingTime = 0;
-                    this.rooms.get(wait_request.room).AC_status = 'working';
-                    this.rooms.get(release_request.room).AC_status = 'waiting';
-                    this.waiting_queue.queue(release_request);
-                    this.active_queue_template.delete(release_request);
-                    this.waiting_queue_template.delete(wait_request);
-                }
-                wait_request = release_request;
-            }
-                
-            this.waiting_queue_template.forEach((w_e_request) => {
-                logger.debug(`${w_e_request.room} is in waiting template`)
-                if (w_e_request.room === wait_request.room) {
-                    w_e_request.target_temperature = wait_request.target_temperature;
-                    w_e_request.current_temperature = wait_request.current_temperature;
-                    w_e_request.priority = wait_request.priority;
-                    w_e_request.waitingTime = wait_request.waitingTime;
-                    ifexist = true;
-                }
-            });
-    
-            if (!ifexist) {
-                this.waiting_queue_template.add(wait_request);
-            }
+            template.add(restof_request);
+            this.rooms.updateRoom('AC_status', restof_request.roomid, 'waiting');
         }
-        this.waiting_queue_template.forEach((wait_request) => {
-            this.waiting_queue.queue(wait_request);
-        });
-
-        //处理回温
-        this.requests.forEach((request) => {
-            let room_state = this.rooms.get(request.room).AC_status;
-
-            if (room_state === 'rest') {
-                //回温
-                if (this.mode === 'heat' && this.rooms.get(request.room).temperature - this.rooms.get(request.room).enviroment > 0.001) {
-                    this.rooms.get(request.room).temperature -= 0.5;
-                } else if (this.mode === 'cold' && this.rooms.get(request.room).enviroment - this.rooms.get(request.room).temperature > 0.001) {
-                    this.rooms.get(request.room).temperature += 0.5;
-                }
-                logger.debug(`Room[${request.room}](${request.current_temperature}) -> (${this.rooms.get(request.room).temperature})`);
-                request.current_temperature = this.rooms.get(request.room).temperature;
-                //rest后重新调度
-                if (Math.abs(request.current_temperature - request.target_temperature) > 3) {
-                    this.rooms.get(request.room).AC_status = 'waiting';
-                    logger.debug(`Room[${request.room}] back to waiting`)
-                    this.waiting_queue.queue(request);
-                }
-            }
-        });
-
-        this.schedule();
-
-    }
-
-    schedule() {
-        this.requests.forEach((e_request) => {
-            if(this.rooms.get(e_request.room).AC_status === 'on') {
-                e_request.waitingTime = this.WAITING_LONG;
-                this.rooms.get(e_request.room).AC_status = 'waiting';
-                logger.debug(`Add Room[${e_request.room}] to waiting queue`)
-                this.waiting_queue.queue(e_request);
-            }
-        });
-
-        while (this.active_queue.length < this.maxServingRequests && this.waiting_queue.length > 0) {
-            let ready_request = this.waiting_queue.dequeue();
-            this.active_queue.queue(ready_request);
-            this.rooms.get(ready_request.room).AC_status = 'working';
-            ready_request.waitingTime = 0;
-        }
+        ready_queue.forEach((serve_request) => {
+            this.resource.Serve(serve_request);
+            this.reachCheck(serve_request);
+        })
+        template.forEach((all_request) => {
+            this.waiting_queue.queue(all_request);
+        })
     }
 
     addRequest(new_request) {
         let existing_request = null;
 
         this.requests.forEach(request => {
-            if (request.room === new_request.room) {
+            if (request.roomid === new_request.roomid) {
                 existing_request = request;
             }
         });
@@ -312,10 +190,81 @@ class Scheduler {
             existing_request.current_temperature = new_request.current_temperature;
             existing_request.priority = new_request.priority;
             logger.debug(`Request[${new_request.roomid}] already exists. data update now.`);
+            const template = new Set();
+
+            while (this.waiting_queue.length > 0) {
+                let update_request = this.waiting_queue.dequeue();
+                template.add(update_request);
+            }
+            template.forEach((update_request) => {
+                this.waiting_queue.queue(update_request);
+            })
         } else {
             this.requests.add(new_request);
             this.rooms.updateRoom('AC_status', new_request.roomid, 'waiting');
+            this.waiting_queue.queue(new_request);
         }
+        
+    }
+
+    reachCheck(release_request) {
+        if (Math.abs(release_request.current_temperature - release_request.target_temperature) < 0.1) {
+            this.deleteRequest(release_request)
+            this.resting_queue.add(release_request)
+            this.rooms.updateRoom('AC_status', release_request.roomid, 'rest')
+        }
+    }
+
+    deleteRequest(delete_request) {
+        if (this.waiting_queue.length > 0) {
+            const template = new Set();
+            const circle_time = this.waiting_queue.length;
+
+            for(let i = circle_time; i > 0;i -- ) {
+                let temp = this.waiting_queue.dequeue();
+                if (temp.roomid !== delete_request.roomid) {
+                    template.add(temp);
+                }
+            }
+            template.forEach((request) => {
+                this.waiting_queue.queue(request)
+            })
+        }
+        this.requests.delete(delete_request)
+    }
+
+    printQueue(head) {
+        if (this.waiting_queue.length > 0) {
+            const template = new Set();
+            let print_str = head;
+            const circle_time = this.waiting_queue.length;
+
+            for(let i = circle_time; i > 0;i -- ) {
+                let temp = this.waiting_queue.dequeue();
+                template.add(temp);
+                if (i !== 1) {
+                    print_str += `Room[${temp.roomid}](${temp.waitingTime}) -> `;
+                } else {
+                    print_str += `Room[${temp.roomid}](${temp.waitingTime})`;
+                }
+            }
+            template.forEach((request) => {
+                this.waiting_queue.queue(request)
+            })
+            logger.info(print_str)
+        }
+    }
+
+    findRequest(roomid) {
+        let result;
+
+        this.requests.forEach((search_request) => {
+            if (search_request.roomid === roomid) {
+                result = search_request;
+            }
+        })
+
+        return result;
     }
 }
 
@@ -326,7 +275,6 @@ class Clients {
         this.scheduler = scheduler;
         this.clients = new Set();
         this.admins = new Set();
-        this.tickAway();
     }
 
     broadCast(target, message) { 
@@ -339,36 +287,28 @@ class Clients {
 
     tickAway() {
         setInterval(() => {
-            let allroomstatus = this.rooms.allRoomsStatus();
             //当前时间
             logger.debug(`ServerTime: ${simulatedTime}`);
-
+            this.broadCast(this.admins, JSON.stringify({ type: 'MINUTE_PASSED', time: simulatedTime}));
+            this.scheduler.running();
+            let allroomstatus = this.rooms.allRoomsStatus();
             //房间状态
             logger.debug("Rooms:");
             for (const key in allroomstatus) {
                 const value = allroomstatus[key];
-                logger.debug(`Room[${key}](${value.AC_status}): ${value.temperature} now.`)
+                logger.debug(`Room[${key}](${value.AC_status}): ${value.temperature} now.`);
+                this.rooms.room_table.add({ room: key, temperature: value.temperature, AC_status: value.AC_status});
             }
-
-            //请求状态
-            logger.debug("Requests:");
             this.scheduler.requests.forEach(request => {
-                logger.debug(`Room[${request.room}](${this.rooms.getRoomStatus(request.room).AC_status})----------------(temperature: ${request.current_temperature} wind: ${request.priority} serviceTime: ${request.serviceTime}): ${request.target_temperature}-----waiting ${request.waitingTime}------timeslice ${request.timeslice} ${request.timeslice_time}`);
-            });
-
-            //正在服务请求
-            // logger.debug(`ActiveQueue: ${this.RM.active_queue.length}`);
-
-            //等待服务请求
-            // logger.debug(`WaitingQueue: ${this.RM.waiting_queue.length}`);
-
-            this.scheduler.requests.forEach(request => {
-                request.socketid.send(JSON.stringify({type: 'TEMPERATUREUPDATE', data: request.current_temperature}));
+                request.socketid.send(JSON.stringify({type: 'TEMPERATURE_UPDATE', data: this.rooms.getRoomStatus('temperature', request.roomid)}));
             });
             simulatedTime += 1;
-            this.broadCast(this.clients, JSON.stringify({ type: 'MINUTEPASSED', time: simulatedTime}));
-            this.broadCast(this.admins, JSON.stringify({ type: 'ROOMSTABLE', data: ``}));
-        }, 1000);
+            this.broadCast(this.clients, JSON.stringify({ type: 'MINUTE_PASSED', time: simulatedTime}));
+            
+            const room_table = Array.from(this.rooms.room_table);
+            this.broadCast(this.admins, JSON.stringify({ type: 'ROOMS_TABLE', data: room_table}));
+            this.rooms.room_table.clear();
+        }, 10000);
     }
 
     addClient(ws, role) {
@@ -444,26 +384,27 @@ const https_options = {
 	key: fs.readFileSync('/home/antaresz/Projects/GPOS/Cert/privkey.pem'),
 	cert: fs.readFileSync('/home/antaresz/Projects/GPOS/Cert/fullchain.pem')
 };
-const server = https.createServer(https_options, app).listen(port, () => {
-    logger.info(`Server is running on port ${port}`);
-});
-const wss = new WebSocket.Server({ server });
-
 let mode = 'cold';
 let simulatedTime = 0;
 const rooms_manager = new Rooms();
-const scheduler = new Scheduler(rooms_manager);
+const service = new Service(rooms_manager, mode, 3);
+const scheduler = new Scheduler(rooms_manager, service);
 const clients_manager = new Clients(rooms_manager, scheduler);
 const sql_manager = new Database();
+
+const server = https.createServer(https_options, app).listen(port, () => {
+    logger.info(`Server is running on port ${port}`);
+    clients_manager.tickAway();
+});
+const wss = new WebSocket.Server({ server });
 
 wss.on('connection', (ws) => {
     logger.info('Client connected');
     ws.on('message', async (msg) => {
-        logger.info("Client send a message.");
 
         try {
             const data = JSON.parse(msg);
-
+            logger.info(`Client send a ${data.type} message.`);
             if (data.type === 'LOGIN') {
                 if (data.role === 'user') {
                     let ifexist = await sql_manager.query('SELECT * FROM USERS WHERE roomid = ?', [data.form.room]);
@@ -471,34 +412,49 @@ wss.on('connection', (ws) => {
                         const m_err = new Error(`${data.form.room} already exists.`)
                         throw m_err; //throw out to send to client error
                     } else {
-                        sql_manager.query('INSERT INTO USERS (name, roomid) VALUES (?, ?)', [data.form.name, data.form.room]);
+                        // sql_manager.query('INSERT INTO USERS (name, roomid) VALUES (?, ?)', [data.form.name, data.form.room]);
                         logger.info(`User in Room[${data.form.room}] loged in`);
                         const room = new Room(data.room_status.AC_status, data.room_status.temperature, data.room_status.enviroment);
                         
                         rooms_manager.addRoom(data.form.room, room);
                     }
+                    clients_manager.addClient(ws, data.role);
                 } else if (data.role === 'admin') {
                     logger.info("One admin loged in");
+                    
+                    //for test
+                    if (clients_manager.admins.size === 0) {
+                        clients_manager.addClient(ws, data.role);
+                    }
+                    logger.info(`User in Room[${data.form.room}] loged in`);
+                    const room = new Room(data.room_status.AC_status, data.room_status.temperature, data.room_status.enviroment);
+                    
+                    rooms_manager.addRoom(data.form.room, room);
                 }
-                clients_manager.addClient(ws, data.role);
+                
                 clients_manager.sendResponse(ws, 'true', 'login');
             } else if (data.type === 'AC_ON') {
-                logger.info(`Room[${data.roomid}] wants to turn AC on`)
+                logger.info(`Room[${data.roomid}] wants to turn AC on`);
                 rooms_manager.updateRoom('AC_status', data.roomid, 'on');
                 clients_manager.sendResponse(ws, 'true', 'AC_on');
             } else if (data.type === 'AC_OFF') {
-                logger.info(`Room[${data.roomid}] wants to turn AC off`)
+                logger.info(`Room[${data.roomid}] wants to turn AC off`);
                 
+                let delete_request = scheduler.findRequest(data.roomid);
+                scheduler.deleteRequest(delete_request);
                 rooms_manager.updateRoom('AC_status', data.roomid, 'off');
                 clients_manager.sendResponse(ws, 'true', 'AC_off');
             } else if (data.type === 'REQUEST') {
-                const room_status_now = this.rooms.getRoomStatus('AC_status', data.room);
+                const room_status_now = rooms_manager.getRoomStatus('AC_status', data.room);
 
-                if (room_status_now !== 'off') {
-                    const new_request = new request(ws, data.room, data.current_temperature, data.target_temperature, data.wind);
+                //ban 'off' status from frontend
+                if (room_status_now !== 'rest') {
+                    const new_request = new Request(ws, data.room, data.current_temperature, data.target_temperature, data.wind);
                     scheduler.addRequest(new_request); 
+                    clients_manager.sendResponse(ws, 'true', 'request');
                 } else {
-                    wx.send(JSON.stringify({ type: 'response', data: 'AC is off.Please turn on AC and try again'}))
+                    const m_err = new Error(`${data.form.room} AC is off.Please turn on and try again`);
+                    throw m_err; //throw out to send to client error
                 }
             }
             
