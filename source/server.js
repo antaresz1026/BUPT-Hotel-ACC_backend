@@ -6,14 +6,28 @@ const fs = require('fs');
 const mysql = require('mysql2/promise');
 const PriorityQueue = require('js-priority-queue');
 const EventEmitter = require('events');
+const e = require('express');
 
 class MyEmitter extends EventEmitter {}
 
+
+/**
+ * on: AC open
+ * waiting: wait for schedule
+ * working
+ * rest: reach target temperature
+ * off: AC close
+ * @author antaresz
+ *
+ * @class Room
+ * @typedef {Room}
+ */
 class Room {
     constructor(AC_status, temperature, enviroment) {
         this.AC_status = AC_status;
         this.temperature = temperature;
         this.enviroment = enviroment;
+        this.wind = 0;
     }
 }
 
@@ -29,18 +43,47 @@ class Request {
     }
 }
 
+class Detail {
+    constructor(roomid, request_time) {
+        this.roomid = roomid;
+        this.request_time = request_time;
+        this.serve_start = 0;
+        this.serve_end = 0;
+        this.serve_time = 0;
+        this.wind = 0;
+        this.sum = 0;
+        this.ratio = 0
+    }
+}
+
+class Bill {
+    constructor(roomid, check_in) {
+        this.roomid = roomid;
+        this.check_in = check_in;
+        this.check_out = 0;
+        this.sum = 0;
+    }
+}
+
 class Rooms {
-    constructor() {
+    constructor(account_manager) {
         this.rooms = new Map();
         this.room_table = new Set();
+        this.account_manager = account_manager;
     }
 
     addRoom(roomid, roomState) {
         this.rooms.set(roomid, roomState);
+        this.account_manager.addBill(new Bill(roomid, simulatedTime));
     }
     
     /**
      * update status of room, only AC_status and temperature, because enviroment can't be reset.
+     * working to waiting , commit old, new detail
+     * working to working , if wind not change ,leave it out, else commit old, new detail
+     * on to waiting, new detail
+     * waiting to working, if exist detail , add serve_start, else add request_time, serve_start
+     * working to rest , 
      * @author antaresz
      *
      * @param {*} whichstatus
@@ -51,11 +94,103 @@ class Rooms {
         if(!this.rooms.has(roomid)) {
             const m_err = new Error('Target Room isn\'t existed.');
             throw m_err;
-        } else if(whichstatus === 'AC_status') {
-            this.rooms.get(roomid).AC_status = value;
-        } else if (whichstatus === 'temperature') {
-            this.rooms.get(roomid).temperature = value;
-        } 
+        } else {
+            let exist_detail = this.account_manager.findDetail(roomid);
+            let status_now = this.getRoomStatus('AC_status', roomid);
+
+            if (whichstatus === 'AC_status'){
+                if (exist_detail) {
+                    if (value === 'waiting') {
+                        if (status_now === 'working') {
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from working to waiting [commit]`)
+                            exist_detail.serve_end = simulatedTime - 1;
+                            exist_detail.serve_time = exist_detail.serve_end - exist_detail.serve_start;
+                            exist_detail.wind = this.rooms.get(roomid).wind;
+                            if (exist_detail.wind === 1) {
+                                exist_detail.ratio = 0.33;
+                            } else if (exist_detail.wind === 2) {
+                                exist_detail.ratio = 0.5;
+                            } else if (value === 3) {
+                                exist_detail.ratio = 1;
+                            }
+                            exist_detail.sum = exist_detail.serve_time * exist_detail.ratio;
+                            this.account_manager.commitToSQL(exist_detail);
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from on to waiting [new]`)
+                            let new_detail = new Detail(roomid, simulatedTime);
+                            this.account_manager.details.add(new_detail);
+                        }
+                    } else if (value === 'working') {
+                        if (status_now === 'waiting') {
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from waiting to working [change]`)
+                            exist_detail.serve_start = simulatedTime - 1;
+                        }
+                    } else if (value === 'off') {
+                        if (status_now === 'working') {
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from working to off [commmit]`)
+                            exist_detail.serve_end = simulatedTime - 1;
+                            exist_detail.serve_time = exist_detail.serve_end - exist_detail.serve_start;
+                            exist_detail.wind = this.rooms.get(roomid).wind;
+                            if (exist_detail.wind === 1) {
+                                exist_detail.ratio = 0.33;
+                            } else if (exist_detail.wind === 2) {
+                                exist_detail.ratio = 0.5;
+                            } else if (value === 3) {
+                                exist_detail.ratio = 1;
+                            }
+                            exist_detail.sum = exist_detail.serve_time * exist_detail.ratio;
+                            this.account_manager.commitToSQL(exist_detail);
+                        } else if (status_now === 'waiting') {
+                            this.account_manager.details.delete(exist_detail);
+                        }
+                    }
+                } else {
+                    if (value === 'waiting') {
+                        if (status_now === 'on') {
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from on to waiting [new]`)
+                            let new_detail = new Detail(roomid, simulatedTime - 1);
+                            this.account_manager.details.add(new_detail);
+                        }
+                    } else if (value === 'working') {
+                        if (status_now === 'waiting') {
+                            logger.warn(`Time: ${simulatedTime} Room[${roomid}] from waiting to working [new]`)
+                            let new_detail = new Detail(roomid, simulatedTime - 1)
+                            new_detail.serve_start = simulatedTime - 1;
+                            this.account_manager.details.add(new_detail);
+                        }
+                    }
+                }
+                this.rooms.get(roomid).AC_status = value;
+            } else if (whichstatus === 'temperature') {
+                this.rooms.get(roomid).temperature = value;
+            } else if (whichstatus === 'wind') {
+                if (this.rooms.get(roomid).wind !== value && this.rooms.get(roomid).wind !== 0) {
+                    logger.warn(`Time: ${simulatedTime} Room[${roomid}] Try to change wind from ${this.rooms.get(roomid).wind} to ${value} [commit]`)
+                    exist_detail.serve_end = simulatedTime - 1;
+                    exist_detail.serve_time = exist_detail.serve_end - exist_detail.serve_start;
+                    exist_detail.wind = this.rooms.get(roomid).wind;
+                    if (exist_detail.wind === 1) {
+                        exist_detail.ratio = 0.33;
+                    } else if (exist_detail.wind === 2) {
+                        exist_detail.ratio = 0.5;
+                    } else if (value === 3) {
+                        exist_detail.ratio = 1;
+                    }
+                    exist_detail.sum = exist_detail.serve_time * exist_detail.ratio;
+                    this.account_manager.commitToSQL(exist_detail);
+                } else {
+                    exist_detail.wind = value;
+                    if (exist_detail.wind === 1) {
+                        exist_detail.ratio = 0.33;
+                    } else if (exist_detail.wind === 2) {
+                        exist_detail.ratio = 0.5;
+                    } else if (exist_detail.wind === 3) {
+                        exist_detail.ratio = 1;
+                    }
+                }
+                logger.warn(`Time: ${simulatedTime} Room[${roomid}] Try to change wind from ${this.rooms.get(roomid).wind} to ${value} [set]`)
+                this.rooms.get(roomid).wind = value;
+            }
+        }
     }
 
     
@@ -157,7 +292,9 @@ class Scheduler {
             let ready_request =  this.waiting_queue.dequeue();
             ready_queue.add(ready_request);
             template.add(ready_request);
+            //waiting to working
             this.rooms.updateRoom('AC_status', ready_request.roomid, 'working')
+
         }
         while(this.waiting_queue.length > 0) {
             let restof_request = this.waiting_queue.dequeue();
@@ -165,6 +302,7 @@ class Scheduler {
                 restof_request.waitingTime += 1;
             }
             template.add(restof_request);
+            //working to waiting
             this.rooms.updateRoom('AC_status', restof_request.roomid, 'waiting');
         }
         ready_queue.forEach((serve_request) => {
@@ -201,6 +339,7 @@ class Scheduler {
             })
         } else {
             this.requests.add(new_request);
+            //on to waiting
             this.rooms.updateRoom('AC_status', new_request.roomid, 'waiting');
             this.waiting_queue.queue(new_request);
         }
@@ -211,7 +350,9 @@ class Scheduler {
         if (Math.abs(release_request.current_temperature - release_request.target_temperature) < 0.1) {
             this.deleteRequest(release_request)
             this.resting_queue.add(release_request)
+            //working to rest
             this.rooms.updateRoom('AC_status', release_request.roomid, 'rest')
+            this.rooms.updateRoom('wind', release_request, 0);
         }
     }
 
@@ -268,11 +409,58 @@ class Scheduler {
     }
 }
 
+class Account {
+    constructor(sql_manager) {
+        this.sql_manager = sql_manager;
+        this.details = new Set();
+        this.undone_details = new Set();
+        this.bills = new Set();
+    }
+
+    addDetail(new_detail) {
+        let existing_detail = this.findDetail(new_detail);
+
+        if (existing_detail) {
+            this.commitToSQL(existing_detail);
+        } else {
+            logger.debug(`(Time: ${simulatedTime}) ----------------------- Add detail of Room[${new_detail.roomid}] with wind--${new_detail.wind}`)
+            this.details.add(new_detail);
+        }
+    }
+
+    commitToSQL(detail) {
+        this.details.delete(detail);
+        if (detail.serve_time !== 0) {
+            this.sql_manager.query('INSERT INTO DETAILS (roomid, request_time, working_start, working_end, serving_time, wind, details, ratio) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+                [detail.roomid, detail.request_time, detail.serve_start, detail.serve_end, detail.serve_time, detail.wind, detail.sum, detail.ratio]
+            )
+        }
+        
+    }
+
+    addBill(bill) {
+        this.bills.add(bill);
+    }
+
+    findDetail(roomid) {
+        let existing_detail = null;
+
+        this.details.forEach((detail) => {
+            if (detail.roomid === roomid) {
+                existing_detail = detail;
+            }
+        });
+
+        return existing_detail;
+    }
+}
+
 
 class Clients {
-    constructor(rooms, scheduler) {
+    constructor(rooms, scheduler, account_manager) {
         this.rooms = rooms;
         this.scheduler = scheduler;
+        this.account_manager = account_manager;
         this.clients = new Set();
         this.admins = new Set();
     }
@@ -289,6 +477,7 @@ class Clients {
         setInterval(() => {
             //当前时间
             logger.debug(`ServerTime: ${simulatedTime}`);
+            
             this.broadCast(this.admins, JSON.stringify({ type: 'MINUTE_PASSED', time: simulatedTime}));
             this.scheduler.running();
             let allroomstatus = this.rooms.allRoomsStatus();
@@ -308,6 +497,7 @@ class Clients {
             const room_table = Array.from(this.rooms.room_table);
             this.broadCast(this.admins, JSON.stringify({ type: 'ROOMS_TABLE', data: room_table}));
             this.rooms.room_table.clear();
+            logger.warn("---------------------------------------------")
         }, 10000);
     }
 
@@ -375,9 +565,6 @@ const logger = winston.createLogger({
 		new winston.transports.File({ filename: 'logs/runtime.log'})
 	],
 });
-
-
-
 const port = 42133;
 const app = express();
 const https_options = {
@@ -386,11 +573,12 @@ const https_options = {
 };
 let mode = 'cold';
 let simulatedTime = 0;
-const rooms_manager = new Rooms();
+const sql_manager = new Database();
+const account_manager = new Account(sql_manager);
+const rooms_manager = new Rooms(account_manager);
 const service = new Service(rooms_manager, mode, 3);
 const scheduler = new Scheduler(rooms_manager, service);
-const clients_manager = new Clients(rooms_manager, scheduler);
-const sql_manager = new Database();
+const clients_manager = new Clients(rooms_manager, scheduler, account_manager);
 
 const server = https.createServer(https_options, app).listen(port, () => {
     logger.info(`Server is running on port ${port}`);
@@ -415,7 +603,8 @@ wss.on('connection', (ws) => {
                         // sql_manager.query('INSERT INTO USERS (name, roomid) VALUES (?, ?)', [data.form.name, data.form.room]);
                         logger.info(`User in Room[${data.form.room}] loged in`);
                         const room = new Room(data.room_status.AC_status, data.room_status.temperature, data.room_status.enviroment);
-                        
+                        const new_bill = new Bill(data.room, simulatedTime);
+                        account_manager.addBill(new_bill);
                         rooms_manager.addRoom(data.form.room, room);
                     }
                     clients_manager.addClient(ws, data.role);
@@ -442,7 +631,9 @@ wss.on('connection', (ws) => {
                 
                 let delete_request = scheduler.findRequest(data.roomid);
                 scheduler.deleteRequest(delete_request);
+                //working to off
                 rooms_manager.updateRoom('AC_status', data.roomid, 'off');
+                
                 clients_manager.sendResponse(ws, 'true', 'AC_off');
             } else if (data.type === 'REQUEST') {
                 const room_status_now = rooms_manager.getRoomStatus('AC_status', data.room);
@@ -450,7 +641,9 @@ wss.on('connection', (ws) => {
                 //ban 'off' status from frontend
                 if (room_status_now !== 'rest') {
                     const new_request = new Request(ws, data.room, data.current_temperature, data.target_temperature, data.wind);
+
                     scheduler.addRequest(new_request); 
+                    rooms_manager.updateRoom('wind', data.room, data.wind);
                     clients_manager.sendResponse(ws, 'true', 'request');
                 } else {
                     const m_err = new Error(`${data.form.room} AC is off.Please turn on and try again`);
