@@ -1,0 +1,887 @@
+[error]: roomid is not defined
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: this.activeRequests.size is not a function
+[error]: newRequest is not defined
+[error]: newRequest is not defined
+[error]: newRequest is not defined
+[error]: CM is not defined
+[error]: CM is not defined
+[error]: CM is not defined
+[error]: request is not defined
+[error]: request is not defined
+[error]: request is not defined
+[error]: CM is not defined
+[error]: roomState is not defined
+[error]: roomState is not defined
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: room_manager is not defined
+[error]: SQL query fail.
+[error]: SQL query fail: Error: Table 'HACC.USERS' doesn't exist
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[error]: SQL query fail: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SEARCH FROM USERS WHERE roomid = ?' at line 1
+[error]: SQL query fail: Error: Duplicate entry '301' for key 'USERS.PRIMARY'
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Cannot read properties of undefined (reading 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Cannot set properties of undefined (setting 'AC_status')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Cannot read properties of undefined (reading 'getRoomStatus')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: request is not defined
+[error]: Unexpected token u in JSON at position 0
+[error]: request is not defined
+[error]: request is not defined
+[error]: request is not defined
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: longger is not defined
+[error]: Unexpected token u in JSON at position 0
+[error]: longger is not defined
+[error]: longger is not defined
+[error]: longger is not defined
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: this.rooms.has is not a function
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'waitingTime')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'waitingTime')
+[error]: Cannot set properties of undefined (setting 'waitingTime')
+[error]: Cannot set properties of undefined (setting 'waitingTime')
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot set properties of undefined (setting 'waitingTime')
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: scheduler.requests.deleteRequest is not a function
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: release_request is not defined
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Unexpected token u in JSON at position 0
+[error]: Cannot read properties of undefined (reading 'roomid')
+[error]: SQL query fail: Error: Cannot add or update a child row: a foreign key constraint fails (`HACC`.`DETAILS`, CONSTRAINT `paydetails` FOREIGN KEY (`roomid`) REFERENCES `USERS` (`roomid`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+[error]: exist_detail is not defined
+[error]: exist_detail is not defined
+[error]: exist_detail is not defined
+[error]: exist_detail is not defined
+[error]: exist_detail is not defined
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: this.rooms.getRoomStatus is not a function
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'wind')
+[error]: Cannot set properties of null (setting 'serve_end')
+[error]: Cannot set properties of null (setting 'serve_end')
